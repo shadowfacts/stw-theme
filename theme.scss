@@ -52,19 +52,22 @@ $lcarsBlue: #9999CC;
 
 // Sidebar
 .side {
-	.morelink {
+	.morelink,
+	.fancy-toggle-button a,
+	.res-fancy-toggle-button {
 		border: none;
 		background-color: $lcarsBlue;
 		background-image: none;
 		border-radius: 50px;
 		text-align: left;
+		color: #EEE;
 
 		&:hover {
 			background-color: $lcarsOrange;
 		}
 
 		a {
-			color: black;
+			color: #EEE;
 			display: block;
 			padding-left: 13px;
 		}
