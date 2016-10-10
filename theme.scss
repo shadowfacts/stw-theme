@@ -1,0 +1,136 @@
+/*
+/r/StarTrekWallpaper subreddit theme
+Author: Shadowfacts
+Version: 0.1.0
+Source: https://github.com/shadowfacts/stw-theme/
+*/
+
+// Variables
+$lcarsOrange: #FF9900;
+
+// Header
+#header {
+	// Note: positions may need to be adjusted from center/center for future featured wallpapers
+	background: url(%%featured%%) center center no-repeat;
+	height: 250px;
+
+	#header-bottom-left {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+
+		#header-img {
+			width: 31px; // don't show the text part of the logo
+		}
+
+		.redditname a {
+			color: transparent;
+
+			&::after {
+				// because it looks better with spaces
+				content: "Star Trek Wallpaper";
+				color: white;
+				position: absolute;
+				bottom: 0px;
+				left: 41px;
+				font-size: large;
+			}
+
+			&:hover::after {
+				text-decoration: underline;
+			}
+		}
+
+		.tabmenu {
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+		}
+	}
+}
+
+// Sidebar
+.side {
+	.morelink {
+		border: none;
+		background-image: url(%%sidebar-btns%%);
+		background-position-y: 0px;
+		background-repeat-x: no-repeat;
+		text-align: left;
+
+		&:hover {
+			background-image: url(%%sidebar-btns%%);
+			background-position-y: 29px;
+		}
+
+		a {
+			color: black;
+			display: inline;
+			margin-left: 13px;
+		}
+
+		.nub {
+			display: none;
+		}
+	}
+}
+
+
+// Flairs
+// Enable image flair
+.flairselector .customizer { display: none !important; }
+
+.flair {
+	border: none !important;
+	padding: 0px;
+	background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+// Move flair left
+.link .flair, .entry .tagline .flair { float: left; }
+
+// User flairs
+// The Cage
+.flair-cage1 { background-position: 0px 0px; }
+.flair-cage2 { background-position: -40px 0px; }
+.flair-cage3 { background-position: -80px 0px; }
+
+// TOS
+.flair-tos1 { background-position: 0px -40px; }
+.flair-tos2 { background-position: -40px -40px; }
+.flair-tos3 { background-position: -80px -40px; }
+.flair-tos4 { background-position: -120px -40px; }
+
+// TAS
+.flair-tas1 { background-position: 0px -80px; }
+.flair-tas2 { background-position: -40px -80px; }
+.flair-tas3 { background-position: -80px -80px; }
+
+// Movies
+.flair-movie1 { background-position: 0px -120px; }
+.flair-movie2 { background-position: -40px -120px; }
+.flair-movie3 { background-position: -80px -120px; }
+.flair-movie4 { background-position: -120px -120px; }
+.flair-movie5 { background-position: -160px -120px; }
+.flair-movie6 { background-position: -200px -120px; }
+
+// TNG
+.flair-tng1 { background-position: 0px -160px; }
+.flair-tng2 { background-position: -40px -160px; }
+.flair-tng3 { background-position: -80px -160px; }
+.flair-tng4 { background-position: -120px -160px; }
+
+// JJ Trek
+.flair-nutrek1 { background-position: 0px -200px; }
+.flair-nutrek2 { background-position: -40px -200px; }
+.flair-nutrek3 { background-position: -80px -200px; }
+.flair-nutrek4 { background-position: -120px -200px; }
+
+// Mod flair
+.flair-admiral {
+	background: url(%%modsheet%%);
+	background-position: 0px 0px;
+}
