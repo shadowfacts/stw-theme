@@ -7,6 +7,7 @@ Source: https://github.com/shadowfacts/stw-theme/
 
 // Variables
 $lcarsOrange: #FF9900;
+$lcarsBlue: #9999CC;
 
 // Header
 #header {
@@ -53,20 +54,19 @@ $lcarsOrange: #FF9900;
 .side {
 	.morelink {
 		border: none;
-		background-image: url(%%sidebar-btns%%);
-		background-position-y: 0px;
-		background-repeat-x: no-repeat;
+		background-color: $lcarsBlue;
+		background-image: none;
+		border-radius: 50px;
 		text-align: left;
 
 		&:hover {
-			background-image: url(%%sidebar-btns%%);
-			background-position-y: 29px;
+			background-color: $lcarsOrange;
 		}
 
 		a {
 			color: black;
-			display: inline;
-			margin-left: 13px;
+			display: block;
+			padding-left: 13px;
 		}
 
 		.nub {
