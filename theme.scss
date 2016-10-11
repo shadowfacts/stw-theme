@@ -8,6 +8,7 @@ Source: https://github.com/shadowfacts/stw-theme/
 // Variables
 $lcarsOrange: #F90;
 $lcarsBlue: #99C;
+$lcarsBlue2: #99F;
 $lcarsPink: #C69;
 $bg: #222;
 
@@ -22,7 +23,7 @@ a,
 	color: #66F;
 
 	&:visited {
-		color: $lcarsBlue;
+		color: $lcarsBlue2;
 	}
 }
 
@@ -164,7 +165,7 @@ a,
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		position: relative;
-		top: -7px; // negate the margin that's on div.spacer
+		top: -10px; // negate the margin that's on div.spacer
 	}
 
 	.subButtons span:first-child,
@@ -214,9 +215,28 @@ a,
 		color: #EEE;
 	}
 
+	.score {
+		color: #EEE !important;
+	}
+
+	.md-container .md {
+		background-color: #333;
+		color: #EEE;
+		border-color: $lcarsBlue;
+	}
+
 	.RES-keyNav-activeElement {
 		background-color: $bg !important;
+
+		.md-container {
+			background-color: $bg !important;
+
+			.md {
+				border-color: $lcarsBlue2;
+			}
+		}
 	}
+
 }
 
 body.listing-page .thing .RES-keyNav-activeElement {
@@ -238,6 +258,37 @@ body.listing-page .thing .RES-keyNav-activeElement {
 	.comment-visits-box .title {
 		color: #333;
 	}
+
+	#REScommentSubToggle {
+		background-color: #333;
+		color: $lcarsBlue;
+	}
+
+	.usertext-edit textarea {
+		background-color: #333;
+		color: #EEE;
+	}
+
+	.thing .md-container {
+		border: 1px solid $bg;
+		border-radius: 7px;
+		background-color: #333;
+
+		.md {
+			color: #EEE;
+			max-width: 100%;
+		}
+	}
+
+	.RES-keyNav-activeElement .md-container,
+	.new-comment .md-container {
+		background-color: #333 !important;
+		border-color: $lcarsBlue;
+	}
+}
+
+body.res-commentBoxes .comment {
+	border: none !important;
 }
 
 // Flairs
