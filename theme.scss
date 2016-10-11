@@ -6,14 +6,31 @@ Source: https://github.com/shadowfacts/stw-theme/
 */
 
 // Variables
-$lcarsOrange: #FF9900;
-$lcarsBlue: #9999CC;
+$lcarsOrange: #F90;
+$lcarsBlue: #99C;
+$lcarsPink: #C69;
+$bg: #222;
+
+// General
+body {
+	background-color: $bg;
+}
+
+a,
+.thing a.title {
+	color: #66F;
+
+	&:visited {
+		color: $lcarsBlue;
+	}
+}
 
 // Header
 #header {
 	// Note: positions may need to be adjusted from center/center for future featured wallpapers
 	background: url(%%featured%%) center center no-repeat;
 	height: 250px;
+	border-bottom: none;
 
 	#header-bottom-left {
 		position: absolute;
@@ -46,12 +63,50 @@ $lcarsBlue: #9999CC;
 			position: absolute;
 			right: 0px;
 			bottom: 0px;
+
+			li {
+				margin-left: 0px;
+				margin-right: 0px;
+
+				a {
+					background-color: $lcarsBlue;
+					color: $bg;
+					padding: 5px 10px 0px 10px;
+
+					&:hover {
+						background-color: $lcarsOrange;
+						color: #222;
+					}
+				}
+
+				&:first-child a {
+					border-top-left-radius: 10px;
+				}
+
+				&:last-child a {
+					border-top-right-radius: 10px;
+				}
+
+				&.selected a {
+					background-color: $lcarsOrange;
+					color: white;
+					border: none;
+					border-bottom: 1px solid $bg;
+				}
+			}
 		}
 	}
 }
 
 // Sidebar
 .side {
+	background-color: $bg;
+	color: #EEE;
+
+	.titlebox h1 a {
+		color: #EEE;
+	}
+
 	.morelink,
 	.fancy-toggle-button a,
 	.res-fancy-toggle-button {
@@ -60,14 +115,19 @@ $lcarsBlue: #9999CC;
 		background-image: none;
 		border-radius: 50px;
 		text-align: left;
-		color: #EEE;
+		color: $bg;
 
 		&:hover {
 			background-color: $lcarsOrange;
+			color: #333;
+
+			a {
+				color: #333;
+			}
 		}
 
 		a {
-			color: #EEE;
+			color: $bg;
 			display: block;
 			padding-left: 13px;
 		}
@@ -76,8 +136,47 @@ $lcarsBlue: #9999CC;
 			display: none;
 		}
 	}
+
+	.titlebox form.toggle,
+	.icon-menu a,
+	.sidebox .spacer,
+	.leavemoderator {
+		background-color: transparent;
+	}
+
+	.titlebox form.toggle,
+	.leavemoderator,
+	.subtitle,
+	.titlebox .bottom,
+	.sidecontentbox .more a {
+		color: #EEE;
+	}
+
+	.sidecontentbox .reddit-link .score {
+		color: #EEE;
+		font-weight: normal;
+	}
 }
 
+.thing {
+	.flat-list form {
+		color: #EEE;
+	}
+
+	.RES-keyNav-activeElement {
+		background-color: $bg !important;
+	}
+}
+
+body.listing-page .thing .RES-keyNav-activeElement {
+	background-color: #333 !important;
+}
+
+.linkflairlabel {
+	background-color: #555;
+	border-color: #666;
+	color: #EEE;
+}
 
 // Flairs
 // Enable image flair
