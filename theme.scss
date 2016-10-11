@@ -337,6 +337,17 @@ body.res-commentBoxes .comment {
 	}
 }
 
+.stylesheet-customize-container {
+	#RESStyleSheetTipPane,
+	label,
+	.description,
+	.description .img-url {
+		color: #EEE;
+	}
+
+
+}
+
 // Flairs
 // Enable image flair
 .flairselector .customizer { display: none !important; }
