@@ -159,13 +159,15 @@ a,
 	.submit-link .morelink {
 		border-top-left-radius: 15px;
 		border-top-right-radius: 15px;
+		position: relative;
+		top: 5px; // negate the margin that's on div.spacer
 	}
 
 	.submit-text .morelink {
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		position: relative;
-		top: -10px; // negate the margin that's on div.spacer
+		top: -5px; // negate the margin that's on div.spacer
 	}
 
 	.create .morelink {
