@@ -65,8 +65,6 @@ a,
 			bottom: 0px;
 
 			li {
-				margin-left: 0px;
-				margin-right: 0px;
 
 				a {
 					background-color: $lcarsBlue;
@@ -77,6 +75,10 @@ a,
 						background-color: $lcarsOrange;
 						color: #222;
 					}
+				}
+
+				&:not(:last-child) {
+					margin-right: 2px;
 				}
 
 				&:first-child a {
@@ -113,7 +115,6 @@ a,
 		border: none;
 		background-color: $lcarsBlue;
 		background-image: none;
-		border-radius: 50px;
 		text-align: left;
 		color: $bg;
 
@@ -135,6 +136,39 @@ a,
 		.nub {
 			display: none;
 		}
+	}
+
+	.submit-link .morelink {
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+
+	.submit-text .morelink {
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		position: relative;
+		top: -7px; // negate the margin that's on div.spacer
+	}
+
+	.subButtons span:first-child,
+	.subButtons span:first-child a {
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+	}
+
+	.subButtons span:last-child,
+	.subButtons span:last-child a {
+		border-top-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+	}
+
+	.subButtons span:not(:first-child):not(:last-child),
+	.subButtons span:not(:first-child):not(:last-child) a {
+		border-radius: 0px;
+	}
+
+	.subButtons span:not(:last-child) {
+		margin-right: 2px;
 	}
 
 	.titlebox form.toggle,
