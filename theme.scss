@@ -242,7 +242,17 @@ a,
 	}
 }
 
+#siteTable_organic {
+	background-color: $bg !important;
+	border-color: transparent !important;
+}
+
 .thing {
+	&.promoted {
+		background-color: #444 !important;
+		border-radius: 15px !important;
+	}
+
 	.flat-list form {
 		color: #EEE;
 	}
@@ -268,7 +278,6 @@ a,
 			}
 		}
 	}
-
 }
 
 body.listing-page .thing .RES-keyNav-activeElement {
