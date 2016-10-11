@@ -33,6 +33,10 @@ a,
 	background: url(%%featured%%) center center no-repeat;
 	height: 250px;
 	border-bottom: none;
+	
+	#sr-header-area a {
+		color: black;
+	}
 
 	#header-bottom-left {
 		position: absolute;
@@ -105,6 +109,10 @@ a,
 				}
 			}
 		}
+	}
+
+	#header-bottom-right a {
+		color: #369;
 	}
 }
 
