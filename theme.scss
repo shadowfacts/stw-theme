@@ -18,7 +18,7 @@ body {
 }
 
 a,
-.thing a.title {
+.thing a.title { // because the title link has specific colors >.>
 	color: #66F;
 
 	&:visited {
@@ -42,21 +42,27 @@ a,
 			width: 31px; // don't show the text part of the logo
 		}
 
-		.redditname a {
-			color: transparent;
+		.redditname {
+			color: white;
 
-			&::after {
-				// because it looks better with spaces
-				content: "Star Trek Wallpaper";
-				color: white;
-				position: absolute;
-				bottom: 0px;
-				left: 41px;
-				font-size: large;
-			}
+			a {
+				color: transparent;
+				width: 193px;
+				display: inline-block;
 
-			&:hover::after {
-				text-decoration: underline;
+				&::after {
+					// because it looks better with spaces
+					content: "Star Trek Wallpaper";
+					color: white;
+					position: absolute;
+					bottom: 0px;
+					left: 41px;
+					font-size: large;
+				}
+
+				&:hover::after {
+					text-decoration: underline;
+				}
 			}
 		}
 
@@ -108,6 +114,16 @@ a,
 
 	.titlebox h1 a {
 		color: #EEE;
+	}
+
+	.linkinfo {
+		background-color: $bg;
+		border-color: $lcarsBlue;
+
+		.shortlink #shortlink-text {
+			background-color: #333;
+			color: #EEE;
+		}
 	}
 
 	.morelink,
@@ -211,6 +227,17 @@ body.listing-page .thing .RES-keyNav-activeElement {
 	background-color: #555;
 	border-color: #666;
 	color: #EEE;
+}
+
+.commentarea {
+	.title,
+	.commentingAs {
+		color: #EEE;
+	}
+
+	.comment-visits-box .title {
+		color: #333;
+	}
 }
 
 // Flairs
