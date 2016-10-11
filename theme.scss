@@ -305,6 +305,20 @@ body.res-commentBoxes .comment {
 	border: none !important;
 }
 
+.menuarea .lightdrop {
+	&.dropdown-title {
+		color: #EEE;
+	}
+
+	&.dropdown .selected {
+		color: #DDD;
+	}
+
+	&.drop-choices a {
+		color: #369;
+	}
+}
+
 // Flairs
 // Enable image flair
 .flairselector .customizer { display: none !important; }
