@@ -168,6 +168,10 @@ a,
 		top: -10px; // negate the margin that's on div.spacer
 	}
 
+	.create .morelink {
+		border-radius: 15px;
+	}
+
 	.subButtons span:first-child,
 	.subButtons span:first-child a {
 		border-top-left-radius: 50px;
