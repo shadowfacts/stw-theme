@@ -365,9 +365,10 @@ body.res-commentBoxes .comment {
 	border: none !important;
 	padding: 0px;
 	background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+	background-size: contain;
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 }
 
 // Move flair left
@@ -414,4 +415,5 @@ body.res-commentBoxes .comment {
 .flair-admiral {
 	background: url(%%modsheet%%);
 	background-position: 0px 0px;
+	background-size: contain;
 }
