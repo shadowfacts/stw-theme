@@ -167,12 +167,6 @@ a,
 		}
 	}
 
-	.spacer:nth-child(3),
-	.spacer:nth-child(4) {
-		display: inline-block;
-		width: 50%;
-	}
-
 	.submit-link .morelink {
 		border-top-left-radius: 15px;
 		border-bottom-left-radius: 15px;
@@ -240,6 +234,21 @@ a,
 			background-color: #333;
 			border-color: $lcarsOrange;
 		}
+	}
+}
+
+body.comments-page {
+	.spacer:nth-child(4),
+	.spacer:nth-child(5) {
+		display: inline-block;
+		width: 50%;
+	}
+}
+body:not(.comments-page) {
+	.spacer:nth-child(3),
+	.spacer:nth-child(4) {
+		display: inline-block;
+		width: 50%;
 	}
 }
 
