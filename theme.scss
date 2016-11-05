@@ -290,8 +290,8 @@ body:not(.comments-page) {
 	}
 }
 
-body.listing-page .thing .RES-keyNav-activeElement {
-	background-color: #333 !important;
+.RES-keyNav-activeElement {
+	background-color: #282828 !important;
 }
 
 .linkflairlabel {
@@ -338,8 +338,30 @@ body.listing-page .thing .RES-keyNav-activeElement {
 	}
 }
 
-body.res-commentBoxes .comment {
+.res-commentBoxes .comment,
+.res-commentBoxes .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment {
 	border: none !important;
+	background-color: $bg !important;
+
+	> .RES-keyNav-activeElement {
+		background-color: $bg !important;
+	}
+}
+
+.res-commentBoxes .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+	border: none !important;
+	background-color: #282828 !important;
+
+	> .RES-keyNav-activeElement {
+		background-color: #282828 !important;
+	}
 }
 
 .menuarea .lightdrop {
