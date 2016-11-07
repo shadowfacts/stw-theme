@@ -45,7 +45,14 @@ a,
 		width: 100%;
 
 		#header-img {
-			width: 31px; // don't show the text part of the logo
+			//width: 31px; // don't show the text part of the logo
+			width: 52px;
+			height: 80px;
+			background: url(%%stwsnoo%%) 0px 0px;
+
+			&:hover {
+				background-position-y: 80px;
+			}
 		}
 
 		.redditname {
@@ -62,7 +69,7 @@ a,
 					color: white;
 					position: absolute;
 					bottom: 0px;
-					left: 41px;
+					left: 62px;
 					font-size: large;
 				}
 
