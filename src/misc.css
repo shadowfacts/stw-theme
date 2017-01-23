@@ -1,0 +1,16 @@
+/* Body background */
+body {
+	background-color: #a0ceed;
+	background-position: right bottom;
+	background-size: initial;
+	background-repeat: no-repeat;
+}
+
+/* Remove header gradient */
+body > .content:before, .side .md > h3:first-of-type {
+	display: none;
+}
+
+.side {
+	margin-top: 0;
+}

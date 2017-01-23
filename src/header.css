@@ -1,0 +1,99 @@
+/* LARGE HEADER ADDON
+---------------------------*/
+#header { height: 350px }
+#header .pagename {
+	top: 95px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+
+#header .pagename:before {
+	position: absolute;
+	top: 55px;
+	left: 50%;
+	margin-left: -40px;
+	width: 80px;
+	height: 1px;
+	background: #fff;
+	content: ""
+}
+
+#header .pagename:after {
+	display: block;
+	margin-top: 40px;
+	margin-left: 0
+}
+
+#header .tabmenu { top: 280px }
+.side .md a[href="#headerbutton"] + a { top: 350px }
+.side .md>h3:first-of-type { top: 410px }
+
+@media ( max-width: 1100px) {
+	#header { height: 380px }
+	.side .md>blockquote:nth-of-type(1) { top: 210px }
+	#header:target+.side .md>blockquote:nth-of-type(1) { top: 235px }
+}
+
+/* Featured Wallpaper Adjustments */
+#header {
+	background-image: url(%%header%%);
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+
+/* These values may need to be adjusted for future featured wallpapers */
+@media (min-width: 2000px) {
+	#header {
+		background-position-y: -325px;
+	}
+}
+
+@media (max-width: 2000px) {
+	#header {
+		background-position-y: -275px;
+	}
+}
+
+@media (max-width: 1750px) {
+	#header {
+		background-position-y: -225px;
+	}
+}
+
+@media (max-width: 1600px) {
+	#header {
+		background-position-y: -175px;
+	}
+}
+
+@media (max-width: 1400px) {
+	#header {
+		background-position-y: -150px;
+	}
+}
+
+@media (max-width: 1200px) {
+	#header {
+		background-position-y: -75px;
+	}
+}
+
+@media (max-width: 1000px) {
+	#header {
+		background-position-y: top;
+	}
+}
+
+
+/* Vertically center subreddit name */
+#header .pagename {
+	top: 135px;
+}
+
+/* Remove Apicem tagline */
+#header .pagename:before,
+#header .pagename:after {
+	display: none;
+}

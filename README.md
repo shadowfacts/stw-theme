@@ -4,15 +4,10 @@
 ## Building
 **Prerequisites:**
 
-1. [Ruby](https://www.ruby-lang.org)
-2. [Sass](http://sass-lang.com/)
+1. [NPM](https://www.npmjs.com/)
+2. [minifier](https://www.npmjs.com/package/minifier)
 
 ### Normal
 ```shell
-sass theme.scss theme.css
-```
-
-### Watch
-```shell
-sass --watch theme.scss:theme.css
+./build.sh
 ```

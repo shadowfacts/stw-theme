@@ -1,0 +1,73 @@
+/* Undo Apicem custom button text */
+.submit-link .morelink a:before,
+.submit-text .morelink a:before {
+	display: none;
+}
+
+.morelink {
+	font-size: 10px;
+}
+
+/* Remove Apicem icons for submit buttons b/c they take up too much space horizontally */
+.morelink a:not([data-event-action="createsubreddit"]):after {
+	display: none;
+}
+
+.morelink a:not([data-event-action="createsubreddit"]):hover {
+	text-indent: 0px;
+	color: white;
+	background-color: #434b55;
+}
+
+/* Featured Wallpaper sidebar */
+.side .md a[title="Featured Wallpaper"] {
+	position: absolute;
+	top: 430px;
+	width: 300px;
+	height: 169px;
+	background: url(%%header%%);
+	background-size: contain;
+	color: transparent;
+	border-bottom: none;
+}
+
+.side .md a[title="Featured Wallpaper"]:after {
+	content: "Featured Wallpaper";
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	font-size: large;
+	transition: .3s;
+	color: white;
+}
+
+.side .md a[title="Featured Wallpaper"]:hover:after {
+	color: #ffb6af;
+}
+
+.side {
+	padding-top: 189px;
+}
+
+/* The Federation logo */
+.side .md a[title="The Federation"] {
+	width: 300px;
+	height: 79px;
+	background-image: url(%%federation%%);
+	display: inline-block;
+	position: relative;
+	border-bottom: none;
+}
+
+/* User counters */
+span.subscribers span.word,
+p.users-online span.word {
+	display: none !important;
+}
+.subscribers .number:after {
+	content: " Trekkers";
+}
+
+.users-online .number:after {
+	content: " Exploring";
+}
