@@ -8,6 +8,7 @@
 	-moz-transform: translateX(-50%);
 	transform: translateX(-50%);
 	text-transform: none;
+	text-shadow: 2px 2px 1px black;
 }
 
 #header .pagename:before {
