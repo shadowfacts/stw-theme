@@ -49,48 +49,49 @@
 	background-image: url(%%header%%);
 	background-repeat: no-repeat;
 	background-position-x: center;
+	background-position-y: center;
 }
 
 /* These values may need to be adjusted for future featured wallpapers */
 @media (min-width: 2000px) {
 	#header {
-		background-position-y: -325px;
+		/*background-position-y: -325px;*/
 	}
 }
 
 @media (max-width: 2000px) {
 	#header {
-		background-position-y: -275px;
+		/*background-position-y: -275px;*/
 	}
 }
 
 @media (max-width: 1750px) {
 	#header {
-		background-position-y: -225px;
+		/*background-position-y: -225px;*/
 	}
 }
 
 @media (max-width: 1600px) {
 	#header {
-		background-position-y: -175px;
+		/*background-position-y: -175px;*/
 	}
 }
 
 @media (max-width: 1400px) {
 	#header {
-		background-position-y: -150px;
+		/*background-position-y: -150px;*/
 	}
 }
 
 @media (max-width: 1200px) {
 	#header {
-		background-position-y: -75px;
+		/*background-position-y: -75px;*/
 	}
 }
 
 @media (max-width: 1000px) {
 	#header {
-		background-position-y: top;
+		/*background-position-y: top;*/
 	}
 }
 

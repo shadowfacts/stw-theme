@@ -10,4 +10,4 @@ cat src/sidebar.css >> out.css
 cat src/misc.css >> out.css
 cat src/flairs.css >> out.css
 
-minify out.css
+minify out.css > out.min.css

@@ -1,6 +1,6 @@
 /* Flairs */
 /* Flair selector */
-.flairselector .customizer {
+.side .flairselector .customizer {
 	display: none !important;
 }
 .flairselector li a.author {
